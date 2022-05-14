@@ -20,6 +20,13 @@ body {
     font-weight: 700;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 ul {
     list-style: none;
     cursor: pointer;  
@@ -29,6 +36,11 @@ a {
     text-decoration: none;
     color: var(--primary-text-color);
 }    
+
+.link {
+    margin: 0;
+    padding: 0;
+}
 
 .link:active {
     color: var(--accent-text-color);
@@ -45,6 +57,19 @@ a {
     letter-spacing: 0.03em;
 }
 
+header .logo {
+    margin-top: 24px;
+    margin-left: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 94px;
+    margin-top: 32px;
+    padding: 0;
+}
+
 .logo-accent {
     color: #000;
 }
@@ -55,17 +80,48 @@ a {
 }
 
 /*навигация + контакты*/
+header {
+    height: 80px;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+}
+.menu-header {
+    display: flex;
+    flex-direction: row;
+}
 
 .nav .contact {
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;    
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 294px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;    
 }
 
 .contact {
     color: var(--main-text-color);
+
+    display: flex;
+    flex-direction: row;
+    width: 307px;
+    justify-content: space-between;
+
+    margin-left: 331px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding: 0;   
 }
 
 .nav a:hover, .nav a:focus {
@@ -78,24 +134,39 @@ a {
 }
 
 /*банер*/
-.banner {
+.pouring {
+    height: 600px;
     background-color: #2F303A;
+    padding-top: 200px;
+}
+.banner {    
     color: #FFFFFF;
 
-    text-align: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
 }
 h1 {
+    display: block;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto; 
+
     color: #FFFFFF;
 
     font-family: Roboto, sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em;    
 }
 
 .button {
+    display: block;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: var(--active-text-color);
     color: #000;
@@ -103,9 +174,18 @@ h1 {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
+    justify-content: center;
     letter-spacing: 0.06em;
+}
+
+.order {
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid #2F303A;
+    
+    margin: 30px, auto;
 }
 
 .button:hover,
@@ -124,7 +204,7 @@ h1 {
     letter-spacing: 0.03em;
 }
 
- /*направления*/
+/*направления*/
 .quality h3 {
     color: var(--primary-text-color);
 
@@ -133,6 +213,7 @@ h1 {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 .quality p {
@@ -143,9 +224,31 @@ h1 {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 0;
 }
 
-/*сотрудники*/
+.quality-big-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    margin-bottom: 0;  
+}
+
+.quality-box {
+    width: 270px;
+    height: 101px;    
+}
+
+/*чем занимаемся*/
+.activity {
+    margin-top: 94px;
+    height: 386px;
+}
+
 .activity h2, .team h2 {
     color: var(--primary-text-color);
 
@@ -154,8 +257,43 @@ h1 {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
+.activity-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/*сотрудники*/
+
+.team {
+    margin-top: 94px;
+    height: 648px;
+    background-color: #F5F4FA;
+}
+
+.team-big-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 94px;
+    padding: 0;
+}
+
+.team-box {
+    background-color: #FFFFFF;
+    
+    margin: 0;
+    padding: 0;
+}
 .team h3 {
     color: var(--primary-text-color);
 
@@ -180,7 +318,14 @@ h1 {
 
 /*подвал*/
 footer {
-    background-color: #2F303A;    
+    background-color: #2F303A;
+    
+    height: 252px;
+}
+
+footer .logo {
+    display: inline-flex;    
+    margin-top: 60px;
 }
 
 .logo-accent-footer {
@@ -194,6 +339,14 @@ footer {
 
 address {
     font-style: normal;
+}
+
+.address {
+    display: inline-block;
+    width: 231px;
+    height: 81px;
+    margin-top: 50px;
+    padding: 0;
 }
 
 .addr, .phone-mail {

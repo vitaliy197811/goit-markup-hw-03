@@ -13,19 +13,24 @@
 </head>
 <body>
     <!--шапка-->
-    <header class="page-header">
-        <nav>
-            <a class="logo" href="./index.html">Web<span class="logo-accent">Studio</span></a>
-            <ul class="nav">
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+    <header>
+        <div class="container page-header">
+            <nav class="menu-header">
+                <a class="logo" href="./index.html">Web<span
+                        class="logo-accent">Studio</span></a>
+                <div class="menu">
+                    <ul class="nav">
+                        <li><a href="./index.html">Студия</a></li>
+                        <li><a href="./portfolio.html">Портфолио</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="contact">
+                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="contact">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <section>
@@ -89,14 +94,22 @@
         </section>        
     </main>
     <footer>
-        <a class="logo" href="./index.html">Web<span class="logo-accent-footer">Studio</span></a>
-        <address>
-            <ul>
-                <li><a href="https://goo.gl/maps/jAV8vngoX1ZqWARp7" class="addr">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@example.com" class="phone-mail">info@example.com</a></li>
-                <li><a href="tel:+380991111111" class="phone-mail">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="logo" href="./index.html">Web<span
+                    class="logo-accent-footer">Studio</span></a>
+            <address>
+                <ul class="address">
+                    <li><a href="https://goo.gl/maps/jAV8vngoX1ZqWARp7"
+                            class="addr">г.
+                            Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a href="mailto:info@example.com"
+                            class="phone-mail">info@example.com</a></li>
+                    <li><a href="tel:+380991111111" class="phone-mail">+38 099 111
+                            11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
