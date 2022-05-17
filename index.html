@@ -15,53 +15,48 @@
     <!--шапка-->
     <header>
         <div class="container page-header">
-            <nav class="menu-header">
-                <a class="logo" href="./index.html">Web<span
-                        class="logo-accent">Studio</span></a>
-                <div class="menu">
-                    <ul class="nav">
-                        <li><a href="./index.html">Студия</a></li>
-                        <li><a href="./portfolio.html">Портфолио</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
-                </div>                
+            <nav>
+                <a class="logo" href="./index.html">Web<span class="logo-accent">Studio</span></a>
+                <ul class="header-nav">
+                    <li><a href="./index.html">Студия</a></li>
+                    <li><a href="./portfolio.html">Портфолио</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>                                
             </nav>
-            <ul class="contact">
+            <ul class="header-contact">
                 <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <!--банер-->
-        <section class="pouring">
-            <div class="banner">
-                <h1>Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button order">Заказать услугу</button>
-            </div>
+        <!--герой-->
+        <section class="hero">
+            <h1 class="hero-item">Эффективные решения<br>для вашего бизнеса</h1>
+            <button type="button" class="button order">Заказать услугу</button>                        
         </section>
         <!--деятельность-->
         <section class="quality">
             <div class="container">
                 <ul class="quality-big-box">
                     <li class="quality-box">
-                        <h3>Внимание к деталям</h3>
-                        <p>Идейные соображения, а также начало повседневной работы по
+                        <h3 class="quality-title">Внимание к деталям</h3>
+                        <p class="quality-item">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
                     <li class="quality-box">
-                        <h3>Пунктуальность</h3>
-                        <p>Задача организации, в особенности же рамки и место обучения кадров
+                        <h3 class="quality-title">Пунктуальность</h3>
+                        <p class="quality-item">Задача организации, в особенности же рамки и место обучения кадров
                             влечет за собой.</p>
                     </li>
                     <li class="quality-box">
-                        <h3>Планирование</h3>
-                        <p>Равным образом консультация с широким активом в значительной степени
+                        <h3 class="quality-title">Планирование</h3>
+                        <p class="quality-item">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
                     <li class="quality-box">
-                        <h3>Современные технологии</h3>
-                        <p>Значимость этих проблем настолько очевидна, что реализация плановых
+                        <h3 class="quality-title">Современные технологии</h3>
+                        <p class="quality-item">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.</p>
                     </li>
                 </ul>
@@ -70,7 +65,7 @@
         <!--направления-->
         <section class="activity">
             <div class="container">
-                <h2>Чем мы занимаемся</h2>
+                <h2 class="activity-title">Чем мы занимаемся</h2>
                 <ul class="activity-box">
                     <li><a href="" class="link"><img src="./images/computer.png" width="370"
                                 alt="компьютеры"></a></li>
@@ -84,41 +79,36 @@
         <!--сотрудники-->
         <section class="team">
             <div class="container">
-                <h2>Наша команда</h2>
+                <h2 class="team-title">Наша команда</h2>
                 <ul class="team-big-box">
-                    <li class="team-box"><a href="" class="link"><img src="./images/employee1.jpg" width="270"
-                                alt="Игорь Демьяненко"></a>
-                        <h3>Игорь Демьяненко</h3>
-                        <p>Product Designer</p>
+                    <li class="team-box"><a href="" class="link"><img src="./images/employee1.jpg" width="270" alt="Игорь Демьяненко"></a>
+                        <h3 class="team-box-title">Игорь Демьяненко</h3>
+                        <p class="team-box-item" lang="en">Product Designer</p>
                     </li>
-                    <li class="team-box"><a href="" class="link"><img src="./images/employee2.jpg" width="270"
-                                alt="Ольга Репина"></a>
-                        <h3>Ольга Репина</h3>
-                        <p>Frontend Developer</p>
+                    <li class="team-box"><a href="" class="link"><img src="./images/employee2.jpg" width="270" alt="Ольга Репина"></a>
+                        <h3 class="team-box-title">Ольга Репина</h3>
+                        <p class="team-box-item" lang="en">Frontend Developer</p>
                     </li>
-                    <li class="team-box"><a href="" class="link"><img src="./images/employee3.jpg" width="270"
-                                alt="Николай Тарасов"></a>
-                        <h3>Николай Тарасов</h3>
-                        <p>Marketing</p>
+                    <li class="team-box"><a href="" class="link"><img src="./images/employee3.jpg" width="270" alt="Николай Тарасов"></a>
+                        <h3 class="team-box-title">Николай Тарасов</h3>
+                        <p class="team-box-item" lang="en">Marketing</p>
                     </li>
-                    <li class="team-box"><a href="" class="link"><img src="./images/employee4.jpg" width="270"
-                                alt="Михаил Ермаков"></a>
-                        <h3>Михаил Ермаков</h3>
-                        <p>UI Designer</p>
+                    <li class="team-box"><a href="" class="link"><img src="./images/employee4.jpg" width="270" alt="Михаил Ермаков"></a>
+                        <h3 class="team-box-title">Михаил Ермаков</h3>
+                        <p class="team-box-item" lang="en">UI Designer</p>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
             <a class="logo" href="./index.html">Web<span class="logo-accent-footer">Studio</span></a>
             <address>
                 <ul class="address">
                     <li><a href="https://goo.gl/maps/jAV8vngoX1ZqWARp7" class="addr">г.
                             Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a href="mailto:info@example.com"
-                            class="phone-mail">info@example.com</a></li>
+                    <li><a href="mailto:info@example.com" class="phone-mail">info@example.com</a></li>
                     <li><a href="tel:+380991111111" class="phone-mail">+38 099 111 11 11</a>
                     </li>
                 </ul>
