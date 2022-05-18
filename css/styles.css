@@ -33,16 +33,14 @@ section {
     margin-right: auto;
 }
 
-ul {
-    list-style: none;
-    cursor: pointer;
-    margin-top: 0;
-    margin-bottom: 0;
+h1, h2, h3, ul, p {
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 0;
+ul {
+    list-style: none;
+    cursor: pointer;    
 }
 
 a {
@@ -88,7 +86,6 @@ img {
 /*навигация + контакты*/
 header {
     border-bottom: 1px solid #ECECEC; 
-    height: 80px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -119,7 +116,8 @@ nav {
     display: flex;
     flex-direction: row;
     width: 294px;
-    justify-content: space-between;    
+    justify-content: space-between;
+    padding: 0;   
 }
 
 .header-contact {
@@ -134,14 +132,16 @@ nav {
 }
 
 .header-nav a:hover, 
-.header-nav a:focus {
+.header-nav a:focus, 
+.header-nav a:active {
     color: var(--accent-text-color);
 }
 
 .header-contact a:hover,
 .header-contact a:focus {
-color: var(--accent-text-color);
+    color: var(--accent-text-color);
 }
+
 
 /*герой*/
 .hero {    
@@ -154,7 +154,9 @@ color: var(--accent-text-color);
 }
 
 .hero-item {
-    display: inline-block;      
+    display: inline-block;
+    width: 696px;    
+    margin-bottom: 40px;    
     
     color: #FFFFFF;
 
@@ -166,27 +168,29 @@ color: var(--accent-text-color);
 }
 
 .button {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+
     display: block;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
+    
     border: transparent;
-    border-radius: 4px;    
+    border-radius: 4px;
 }
 
 .order {
-    background: var(--accent-text-color);
     color: var(--active-text-color);
-
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    justify-content: center;
+    background: var(--accent-text-color);       
+    
+    line-height: 1.88;    
     letter-spacing: 0.06em;
 
     min-width: 200px;
-    height: 50px;       
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*направления*/
@@ -217,7 +221,7 @@ color: var(--accent-text-color);
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .quality-item {
@@ -241,7 +245,7 @@ color: var(--accent-text-color);
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 }
 
 .activity-box {
@@ -249,9 +253,7 @@ color: var(--accent-text-color);
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -267,7 +269,8 @@ color: var(--accent-text-color);
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
     padding: 0;
 }
 
@@ -275,9 +278,8 @@ color: var(--accent-text-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1170px;
-    height: 368px;
-    margin-top: 50px;
+    width: 1170px;    
+    margin: 0;
     padding: 0;
 }
 
@@ -285,14 +287,18 @@ color: var(--accent-text-color);
     background-color: #FFFFFF;
 
     width: 270px;
-    height: 368px;
-    
+        
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.team-content {
+    padding: 30px 0;
+}
+
 .team-box-title {
     color: var(--primary-text-color);
 
@@ -302,9 +308,8 @@ color: var(--accent-text-color);
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 0; 
+    margin-bottom: 10px;  
 }
 
 .team-box-item {
@@ -316,13 +321,13 @@ color: var(--accent-text-color);
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 
 /*подвал*/
 .footer {
     background-color: #2F303A;
-
-    height: 252px;
+    
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -345,8 +350,7 @@ color: var(--accent-text-color);
     font-style: normal;
     
     display: inline-block;
-    width: 231px;
-    height: 81px;
+    width: 231px;    
     margin: 0;
     padding: 0;
 }
@@ -403,12 +407,10 @@ color: var(--accent-text-color);
     color: #212121;
     background: #F5F4FA;
 
-    font-family: Roboto, sans-serif;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
+
     padding: 6px 22px;
 }
 
@@ -443,7 +445,7 @@ padding: 0;
     margin-bottom: 30px;
     padding: 0;
     background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .work-box > a {
