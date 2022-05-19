@@ -132,8 +132,7 @@ nav {
 }
 
 .header-nav a:hover, 
-.header-nav a:focus, 
-.header-nav a:active {
+.header-nav a:focus {
     color: var(--accent-text-color);
 }
 
