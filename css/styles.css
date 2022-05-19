@@ -117,7 +117,7 @@ nav {
     flex-direction: row;
     width: 294px;
     justify-content: space-between;
-    padding: 0;   
+    padding: 0;  
 }
 
 .header-contact {
@@ -139,6 +139,10 @@ nav {
 
 .header-contact a:hover,
 .header-contact a:focus {
+    color: var(--accent-text-color);
+}
+
+[aria-current] {
     color: var(--accent-text-color);
 }
 
