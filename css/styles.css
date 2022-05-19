@@ -133,7 +133,7 @@ nav {
 
 .header-nav a:hover, 
 .header-nav a:focus {
-    color: var(--accent-text-color);
+    color: var(--accent-text-color);    
 }
 
 .header-contact a:hover,
@@ -141,8 +141,9 @@ nav {
     color: var(--accent-text-color);
 }
 
-[aria-current] {
+[current] {
     color: var(--accent-text-color);
+    border-bottom: 1px solid var(--accent-text-color);
 }
 
 
@@ -170,30 +171,34 @@ nav {
     letter-spacing: 0.06em;
 }
 
-.button {
+.button-order {
+    color: var(--active-text-color);
+    background: var(--accent-text-color);       
+    
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    align-items: center;
-    justify-content: center;
+    line-height: 1.88;    
+    letter-spacing: 0.06em;
 
     display: block;
-    cursor: pointer;
+    min-width: 200px;
+    height: 50px;
+    margin: 0 auto;    
     
+    cursor: pointer;
+
     border: transparent;
     border-radius: 4px;
 }
 
-.order {
-    color: var(--active-text-color);
-    background: var(--accent-text-color);       
-    
-    line-height: 1.88;    
-    letter-spacing: 0.06em;
+.button-order:hover, 
+.button-order:focus {
+    color: var(--accent-text-color);
+    background-color: var(--active-text-color);
+}
 
-    min-width: 200px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+.button-order:active {
+    color: var(--accent-text-color);
 }
 
 /*направления*/
@@ -406,24 +411,31 @@ nav {
     padding: 0;
 }
 
-.port {
+.button-port {
     color: #212121;
     background: #F5F4FA;
 
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
-
+    
+    display: block;
+    cursor: pointer;    
     padding: 6px 22px;
+
+    border: transparent;
+    border-radius: 4px;
 }
 
-.port:hover,
-.port:focus {
+.button-port:hover,
+.button-port:focus {
     color: var(--active-text-color);
-    background-color: var(--accent-text-color);
+    background-color: var(--accent-text-color);    
 }
 
-.port:active {
+.button-port:active {
     color: var(--accent-text-color);
 }
 
